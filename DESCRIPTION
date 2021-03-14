@@ -8,8 +8,7 @@ Authors@R:
            email = "tillmann.schwoerer@fh-kiel.de")
 Description: The package contains tutorials for courses of the Data Science Master at University of Applid Sciences Kiel, Germany.
 Depends: 
-    R (>= 3.3.0),
-    learnr
+    R (>= 3.3.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

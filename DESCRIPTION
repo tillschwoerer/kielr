@@ -1,17 +1,18 @@
 Package: kielr
-Title: What the Package Does (One Line, Title Case)
+Title: The package teaches programming for Data Scientists
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Tillmann",
            family = "Schwörer",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "tillmann.schwoerer@fh-kiel.de")
+Description: The package contains tutorials for courses of the Data Science Master at University of Applid Sciences Kiel, Germany.
+Depends: 
+    R (>= 3.3.0),
+    learnr (>= 0.10.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Suggests: 
-    learnr
+URL: http://github.com/tillschwoerer/kielr

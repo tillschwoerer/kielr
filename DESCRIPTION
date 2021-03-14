@@ -9,7 +9,7 @@ Authors@R:
 Description: The package contains tutorials for courses of the Data Science Master at University of Applid Sciences Kiel, Germany.
 Depends: 
     R (>= 3.3.0),
-    learnr (>= 0.10.0)
+    learnr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

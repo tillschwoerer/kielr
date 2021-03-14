@@ -2,6 +2,7 @@
 title: "Programming Lesson 1"
 output: learnr::tutorial
 runtime: shiny_prerendered
+description: "This tutorial is about some core concepts regarding the R programming language."
 ---
 
 ```{r setup, include=FALSE}
@@ -10,65 +11,99 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-## Topic 1
-
-### Exercise 
-
-*Here's a simple exercise with an empty code chunk provided for entering the answer.*
-
-Write the R code required to add two plus two:
-
-```{r two-plus-two, exercise=TRUE}
-
-```
-
-### Exercise with Code
-
-*Here's an exercise with some prepopulated code as well as `exercise.lines = 5` to provide a bit more initial room to work.*
-
-Now write a function that adds any two numbers and then call it:
-
-```{r add-function, exercise=TRUE, exercise.lines = 5}
-add <- function() {
-  
-}
-```
-
-## Topic 2
-
-### Exercise with Hint
-
-*Here's an exercise where the chunk is pre-evaulated via the `exercise.eval` option (so the user can see the default output we'd like them to customize). We also add a "hint" to the correct solution via the chunk immediate below labeled `print-limit-hint`.*
-
-Modify the following code to limit the number of rows printed to 5:
-
-```{r print-limit, exercise=TRUE, exercise.eval=TRUE}
-mtcars
-```
-
-```{r print-limit-hint}
-head(mtcars)
-```
-
-### Quiz
-
-*You can include any number of single or multiple choice questions as a quiz. Use the `question` function to define a question and the `quiz` function for grouping multiple questions together.*
-
-Some questions to verify that you understand the purposes of various base and recommended R packages:
-
-```{r quiz}
+```{r cran_quiz, exercise.reveal_solution = TRUE}
 quiz(
-  question("Which package contains functions for installing other R packages?",
-    answer("base"),
-    answer("tools"),
-    answer("utils", correct = TRUE),
-    answer("codetools")
+    question("What is NOT part of the cross-industry standard process for Data Mining?",
+    answer("Design Thinking", TRUE),
+    answer("Business Understanding"),
+    answer("Data Understanding"),
+    answer("Data Preparation"),
+    answer("Evaluation"),
+    answer("Modelling"),
+    answer("Deployment"),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = FALSE
   ),
-  question("Which of the R packages listed below are used to create plots?",
-    answer("lattice", correct = TRUE),
-    answer("tools"),
-    answer("stats"),
-    answer("grid", correct = TRUE)
+  question("What is CRAN?",
+    answer("A repository from which you download **R** and install packages", correct = TRUE),
+    answer("The software which processes R commands"),
+    answer("An integrated development environment"),
+    answer("The place from where you can download **RStudio**"),
+    answer("The PC lab at University of Applied Sciences Kiel"),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = FALSE
+  ),
+  question("R Packages ... (select all that applies)",
+    answer("... are collections of code that provide additional functionality", TRUE),
+    answer("... must be installed via `install.packages()` each time you want to use it."),
+    answer("... must be loaded in the beginning of R files via `library()` to use their functionalities.", TRUE),
+    answer("... can be installed from CRAN, Bioconductor or even public Github pages.", TRUE),
+    answer("... should be updated after some time", TRUE),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = F
+  ),
+    question("What is RStudio? (select all that applies)",
+    answer("An integrated development environment", correct = TRUE),
+    answer("A company that develops both free and open source and payed enterprise-ready products", correct = TRUE),
+    answer("An R package that streamlines the data science workflow"),
+    answer("A software for statistical computing", message = "This answer describes R"),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = F
+  ),
+    question("What is RMarkdown? (select all that applies)",
+    answer("A file which you can use to save and execute R, Python and SQL code.", correct = TRUE),
+    answer("A file format that can generate reports in HTML, PDF and word format.", correct = TRUE),
+    answer("A plain text file that works nicely with version control systems.", correct = TRUE),
+    answer("A file that nicely displays pictures, URLs, or mathematical equations.", correct = TRUE),
+    answer("An R script"),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = F
+  ),
+    question("The RStudio IDE ... (select all that applies)",
+    answer("... provides syntax highlighting and autocomplete functionality", correct = TRUE),
+    answer("... facilitates data import from databases and other data sources", correct = TRUE),
+    answer("... helps by organising code in RStudio projects", correct = TRUE),
+    answer("... is offered in free and payed versions", correct = TRUE),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = F
+  ),
+  learnr::question("In which pane do you view the objects that you have created in **R**?",
+    learnr::answer("Source"),
+    learnr::answer("Console"),
+    learnr::answer("Workspace", correct = TRUE),
+    learnr::answer("Files"),
+    correct = "Correct, great work!",
+    incorrect = "Incorrect or not fully correct.",
+    random_answer_order = TRUE,
+    allow_retry = T
+  ),
+  learnr::question("In which pane do you view the output of commands executed from a script file?",
+    learnr::answer("Source"),
+    learnr::answer("Console", correct = TRUE),
+    learnr::answer("Workspace"),
+    learnr::answer("Files"),
+    correct = "Correct - well done!",
+    incorrect = "Sorry, that's incorrect. Try again.",
+    random_answer_order = TRUE,
+    allow_retry = T
   )
 )
 ```
+
+
+```{r}
+
+```
+

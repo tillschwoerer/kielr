@@ -6,7 +6,10 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of kielr is to …
+The goal of the package kielr is to provide quizzes accompanying the
+courses of the [Data Science Master
+Program](https://www.fh-kiel.de/fachbereiche/data-science-interdisziplinaerer-studiengang/)
+at [University of Applied Science Kiel](https://www.fh-kiel.de/).
 
 ## Installation
 
@@ -14,7 +17,13 @@ You can install the development version of kielr from
 [Github](https://github.com/tillschwoerer/kielr) with:
 
 ``` r
-devtools::install_github("tillschwoerer/kielr", ref = "main", dependencies = TRUE)
+devtools::install_github("tillschwoerer/kielr", ref = "main")
+```
+
+You also need to install the package **learnr** with:
+
+``` r
+install.packages('learnr')
 ```
 
 ## Example
